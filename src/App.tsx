@@ -2,7 +2,7 @@ import { FormControl, TextField } from '@material-ui/core';
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import { db } from './firebase';
-import addToPhotosIcon from "@material-ui/icons/AddAPhotos";
+// import addToPhotosIcon from "@material-ui/icons/AddAPhotos";
 
 const App: React.FC = () => {
   const [tasks, setTasks] = useState([{ id: "", title: "" }]);
@@ -39,7 +39,7 @@ const App: React.FC = () => {
         />
       </FormControl>
       <button disabled={!input} onClick={newTask}>
-        <addToPhotosIcon />
+        {/* <addToPhotosIcon /> */}
       </button>
 
       {tasks.map((task) => 
